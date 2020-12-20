@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>   
+<head>
+    <title>Página Yan S. Cavalcanti</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="pag.css"/>
+
+    <link rel="stylesheet"href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+            
+           
+    <!--PLUGIN CONTROL JS-->
+    <script type="text/javascript" src="js/L.Control.ZoomBar.js"></script>
+    <!--PLUGIN CONTROL CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/L.Control.ZoomBar.css"/>
+
+
+    <!--POLYGON MUNICÍPIO DE MATOSINHOS-->
+    <script src="Geojson_PagWeb/CMM.geojson"></script>
+    <!--POINTS ALOJAMENTO LOCAL-->
+    <script src="Geojson_pagWeb/Alojamento_Matosinhos.geojson"></script>
+    <!--POLYGON DISTRITO LEIRIA-->
+    <script src="Geojson_pagWeb/Leiria_Dist.geojson"></script>
+    <!--POLYGON LIMITE FAVELAS-->
+    <script src="Geojson_pagWeb/Limite_Favelas.geojson"></script>
+    <!--POLYGON LIMITES UPP-->
+    <script src="Geojson_pagWeb/UPP.geojson"></script>
+    <!--POLYGON MUNICÍPIO RIO DE JANEIRO-->
+    <script src="Geojson_pagWeb/MunicipioRJ.geojson"></script>
+    <style>
+        #map{
+            border: solid 3px grey;
+        }
+  </style>
+</head>
+<body>
+    <div id="boxTop">
+        <h1 id="Nome">Yan Souza Cavalcanti</h1>
+        <h2 id="Prof">Geógrafo</h2>
+        <nav class="Menu">
+            <ul>
+                <li><a href="index.html">Informações<br>Pessoais</a></li>
+                <li><a href="pag2.html">Formação</a></li>
+                <li><a href="pag3.html">Eventos<br>Académicos</a></li>
+                <li><a href="pag4.html">Experiência<br>Profissional</a></li>
+                <li><a href="pag5.html">Competências</a></li>
+                <li><a href="pag6.html">Trabalhos<br>Realizados</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="boxBottom">
+        <h1 class="title">Trabalhos Realizados</h1>
+        <div style="width: 700px; height: 600px; float: left; padding-bottom: 30px;">
+            <div id="map" style="width: 685px; height: 600px;">i</div>
+            
+            <!--CONEXĀO FICHEIRO JAVASCRIPT-->
+            <script src="pag6.js"></script> 
+            
+        </div>
+
+        <!--DESCRIÇÃO DO MAPA-->
+        <p id="descricao_mapa">
+            Estão expostos no mapa, alguns dos trabalhos realizados no âmbito académico e profissional, os quais podem ser
+            consultados atravéz das janelas <i>popup</i> das suas respespetivas <i>layers</i>, ou acessados atravéz dos <i>links</i> foranecidos abaixo.
+        </p>
+        <ul>
+            <li class="trabalhos"><strong>Análise Espacial Aplicada ao Ordenamento Territorial do Distrito de Leiria (2020)</strong><br>
+                <a class="documento"href="./Trabalhos/AEOT_Relatorio.pdf" target="_blank"> <i class="far fa-file-pdf"></i> Abrir Relatório</a>
+            </li>
+            <br>
+            <li class="trabalhos"><strong>Trabalho de Conclusão de Curso - Monografia PUC-Rio (2018)</strong><br>
+                <a class="documento"href="./Trabalhos/YanCavalcanti_Monografia.pdf" target="_blank"> <i class="far fa-file-pdf"></i> Abrir Monografia</a>
+                <a class="documento"href="./Trabalhos/MonografiaBanner.pdf" target="_blank">  &nbsp; &nbsp;<i class="far fa-file-pdf"></i> <i>Banner</i></a>
+            </li>           
+        </ul>
+    </div>
+    <footer>
+        <p id="autoria">Elaborado por Yan Souza Cavalcanti ©2020</p>
+    </footer>
+</body>
+</html>
